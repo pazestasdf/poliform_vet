@@ -12,33 +12,35 @@ Las instrucciones de este proyecto son:
     Agregar siguiente linea: 
     has_many :animals, as: :specie
 7. @ /app/models/animal.rb agregar siguiente linea: 
-    >def makeSound
-        >puts "Hola!"
-    >end
+    def makeSound
+    puts "Hola!"
+    end
 8. @ /app/models/dog.rb agregar siguiente linea:
-    >def makeSound
-        >puts "Woof!"
-    >end
+    def makeSound
+    puts "Woof!"
+    end
 9. @ /app/models/cat.rb agregar siguiente linea:
-    >def makeSound
-        >puts "Meow!"
-    >end
+    def makeSound
+    puts "Meow!"
+    end
 10. @ /app/models/cow.rb agregar siguiente linea:
-    >def makeSound
-        >puts "Moo!"
-    >end
+    def makeSound
+    puts "Moo!"
+    end
 11. rails c
 12. en consola escribir:
-    >Animal.create(name: "Rex", specie: Dog.new(name: "Pastor Aleman"))
-    >para probar modelo: 
-    >a = Animal.last
-    >a.specie.makeSound
-    >resultado: Woof!
-    >Animal.create(name: "Bort", specie: Dog.new(name: "Border Collie"))
-    >Animal.create(name: "Garfield", specie: Cat.new(name: "Orange Tabby"))
-    >Animal.create(name: "Juanito", specie: Cat.new(name: "Tabby"))
-    >Animal.create(name: "Lola", specie: Cow.new(name: "Holstein))
-    >Animal.create(name: "Manola", specie: Cow.new(name: "Angus"))
+    Animal.create(name: "Rex", specie: Dog.new(name: "Pastor Aleman"))
+    
+    para probar modelo: 
+    a = Animal.last
+    a.specie.makeSound
+    resultado: Woof!
+    
+    Animal.create(name: "Bort", specie: Dog.new(name: "Border Collie"))
+    Animal.create(name: "Garfield", specie: Cat.new(name: "Orange Tabby"))
+    Animal.create(name: "Juanito", specie: Cat.new(name: "Tabby"))
+    Animal.create(name: "Lola", specie: Cow.new(name: "Holstein))
+    Animal.create(name: "Manola", specie: Cow.new(name: "Angus"))
 
 Otras sugerencias:
 
