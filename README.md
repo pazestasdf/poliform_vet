@@ -1,7 +1,7 @@
 # README
 Las instrucciones de este proyecto son:
 
-1. Crear diagrama
+1. Crear diagrama (ver diagrama.png)
 2. rails g model dog name
 3. rails g model cat name
 4. rails g model cow name
